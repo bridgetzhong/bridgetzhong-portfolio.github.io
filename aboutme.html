@@ -1,89 +1,135 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>About Me</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bridget Zhong | UX Designer</title>
+
+    <!--- CSS STYLESHEETS --->
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!--- FONT --->
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Raleway" rel="stylesheet">
+
   </head>
 
+<!--- HEADER -->
 <body>
   <header>
-    <nav>
-      <a href="#">
-        <svg id ="logo"></svg>
-      </a>
-      <section class ="top-bar-section">
+    <div class="contain-to-grid sticky" id="part-home">
+      <nav class="top-bar" data-topbar role="navigation" data-options="sticky_on: [small, medium, large]">
+          <ul class="title-area">
+            <li class="name">
+            <!-- <h1><a href="index.html">BRIDGET ZHONG</a></h1> -->
+            </li>
+            <li class="toggle-topbar menu-icon">
+              <a href="#">
+                <!-- BRIDGET ZHONG logo -->
+                <span></span>
+              </a>
+            </li>
+          </ul>
 
-<!--Right Nav bar section-->
-      <ul class="right">
-        <li class="has-dropdown not-click">
-          <a href="#">Projects
-            <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M7.18118 12L0.351947 0.171424L14.0104 0.171425L7.18118 12Z" fill="black"/>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a href="#">About</a>
-        </li>
-        <li>
-          <a href="#">Connect</a>
-        </li>
-      </ul>
-      </section>
-    </nav>
+        <section class ="top-bar-section">
+          <!-- Right Navbar section -->
+          <div class="nav-left" style="float:left">
+            <a href=index.html><img src="images/linkedin.png" height="42" width="42";></a>
+          </div>
+          <div class="nav-right" style="float:right">
+          <ul class="right">
+            <li class="has-dropdown">
+              <a href="#">PROJECTS
+                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.18118 12L0.351947 0.171424L14.0104 0.171425L7.18118 12Z" fill="black"/>
+                </svg>
+              </a>
+              <!-- dropdown
+              <ul class="dropdown">
+                <li><a href="projects.html">COLLABOREATE</a></li>
+              </ul>
+              --->
+            </li>
+            <li>
+              <a href="aboutme.html">ABOUT</a>
+            </li>
+            <li>
+              <a href="contact.html"><strong>CONNECT</strong></a>
+            </li>
+          </ul>
+        </div>
+        </section>
+      </nav>
+    </div>
   </header>
 
 <!--Hero Panel -->
-    <div class="hero-panel container">
-      <img src="images/bridget-aboutme.png" alt="Bridget About Me Picture">
-      <h2>How did I get here?</h2>
-      <p>My fondest memories all share one focus: the ability for me to tell stories through tangible experiences.  My childhood consisted of carrying around sketchbooks, markers, paint, beads, string.  Anything that I could get my hands on to create something (anything), I chased after it.  It didn’t end there, and I was restless in my approach.  When my friends came over, I would create complex games and stories from the ground up, mulling over every detail and rule in the hopes of creating the best game ever.
-      <br>
-      Though my passion for storytelling never ended there, I became bogged down by the demands of growing older.  Being part of an immigrant family has always been a huge part of my identity because it dictated so many of the choices I made my whole life.  One decision I made was pursuing a degree in a more “traditional” industry -- premedicine and health.  I was drawn to the ability to help others, while making decisions based on research and precision.  However, the very core of my being never stopped yearning for something more creative.  Was there anything out there for me that would allow me to do both?
-      <br>
-      After many years of searching for answers, I finally discovered design through a series of happy coincidences.  From the get go, I knew that design was the answer I had been seeking for all these years.
-      <br>
-      Design allows me to choose all of the things I love.
-      <br>
-      Though I found myself on a long-winded road, I’m grateful for every discovery I’ve made along the way.  My many years of schooling filled with scientific methodology and research helped unlock my abillity to determine solutions based on data and precision.  My work in healthcare presented me with the keen ability to drive tangible impact through empathic listening and understanding.  My passion of visual arts sharpened my ability to create beautiful interfaces and visual delights.
-      <br>
-      If you share a similar enthusiasm and passion, or would like to add more of this to your team, please feel free to drop me a line!</p>
-    </div>
-
-<!--Contact CTA -->
-  <div class="container">
-    <div id="cta" class="row">
-      <a href="#" class="button">CONNECT</a>
-    </div>
-    <div class="social-media-links">
-      <a href="linkedin.com/bridget-zhong">
-        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M38 0H10C4.478 0 0 4.478 0 10V38C0 43.522 4.478 48 10 48H38C43.524 48 48 43.522 48 38V10C48 4.478 43.524 0 38 0ZM16 38H10V16H16V38ZM13 13.464C11.068 13.464 9.5 11.884 9.5 9.936C9.5 7.988 11.068 6.408 13 6.408C14.932 6.408 16.5 7.988 16.5 9.936C16.5 11.884 14.934 13.464 13 13.464ZM40 38H34V26.792C34 20.056 26 20.566 26 26.792V38H20V16H26V19.53C28.792 14.358 40 13.976 40 24.482V38Z" fill="black"/>
-        </svg>
-      </a>
-      <a href="instagram.com/brdgt.png">
-        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M30.466 10.976C28.78 10.9 28.272 10.884 24 10.884C19.728 10.884 19.222 10.9 17.536 10.976C13.196 11.174 11.174 13.23 10.978 17.534C10.9 19.222 10.882 19.728 10.882 24C10.882 28.272 10.9 28.778 10.976 30.466C11.174 34.762 13.188 36.826 17.534 37.024C19.22 37.1 19.728 37.118 24 37.118C28.274 37.118 28.78 37.102 30.466 37.026C34.806 36.828 36.826 34.768 37.024 30.468C37.1 28.78 37.116 28.274 37.116 24.002C37.116 19.73 37.1 19.224 37.024 17.538C36.826 13.232 34.802 11.174 30.466 10.976ZM24 32.216C19.462 32.216 15.784 28.538 15.784 24C15.784 19.462 19.464 15.784 24 15.784C28.536 15.784 32.216 19.462 32.216 24C32.216 28.538 28.538 32.216 24 32.216ZM32.542 17.38C31.482 17.38 30.622 16.52 30.622 15.46C30.622 14.4 31.482 13.54 32.542 13.54C33.602 13.54 34.462 14.4 34.462 15.46C34.462 16.52 33.602 17.38 32.542 17.38ZM29.334 24C29.334 26.946 26.946 29.334 24 29.334C21.054 29.334 18.666 26.946 18.666 24C18.666 21.054 21.054 18.666 24 18.666C26.946 18.666 29.334 21.054 29.334 24ZM38 0H10C4.478 0 0 4.478 0 10V38C0 43.522 4.478 48 10 48H38C43.524 48 48 43.522 48 38V10C48 4.478 43.524 0 38 0V0ZM39.904 30.596C39.64 36.414 36.402 39.638 30.598 39.904C28.89 39.982 28.346 40 24 40C19.654 40 19.112 39.982 17.404 39.904C11.588 39.638 8.364 36.408 8.096 30.596C8.018 28.89 8 28.346 8 24C8 19.656 8.018 19.11 8.096 17.404C8.364 11.588 11.592 8.362 17.404 8.098C19.112 8.018 19.654 8 24 8C28.346 8 28.89 8.018 30.598 8.096C36.414 8.362 39.644 11.598 39.904 17.402C39.982 19.11 40 19.656 40 24C40 28.346 39.982 28.89 39.904 30.596Z" fill="black"/>
-        </svg>
-      </a>
-      <a href="github.com/bridgetzhong">
-        <svg viewBox="0 0 48 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M38 0H10C4.478 0 0 4.37004 0 9.75891V37.0839C0 42.4727 4.478 46.8428 10 46.8428H38C43.524 46.8428 48 42.4727 48 37.0839V9.75891C48 4.37004 43.524 0 38 0ZM29.068 38.2354C28.258 38.3877 28 37.9017 28 37.4859V33.2018C28 31.7438 27.476 30.7952 26.9 30.3112C30.464 29.9247 34.208 28.6034 34.208 22.6075C34.208 20.9016 33.584 19.5081 32.562 18.417C32.726 18.0228 33.274 16.434 32.404 14.2851C32.404 14.2851 31.062 13.8655 28.008 15.8856C26.728 15.5342 25.36 15.3644 24 15.3566C22.64 15.3625 21.272 15.5342 19.994 15.8817C16.938 13.8616 15.594 14.2812 15.594 14.2812C14.726 16.4321 15.274 18.0189 15.44 18.4151C14.416 19.5081 13.792 20.8997 13.792 22.6055C13.792 28.5858 17.526 29.9267 21.082 30.3229C20.624 30.7132 20.21 31.4003 20.066 32.4113C19.152 32.8095 16.838 33.4984 15.41 31.1114C15.41 31.1114 14.564 29.6124 12.956 29.5012C12.956 29.5012 11.396 29.4817 12.846 30.4517C12.846 30.4517 13.896 30.9318 14.624 32.7353C14.624 32.7353 15.55 35.5224 20 34.5778V37.484C20 37.8958 19.742 38.3798 18.944 38.2354C12.584 36.1724 8 30.319 8 23.4214C8 14.7965 15.164 7.80713 24 7.80713C32.836 7.80713 40 14.7965 40 23.4214C40 30.317 35.422 36.1685 29.068 38.2354Z" fill="black"/>
-        </svg>
-      </a>
-      <a href="twitter.com/brdgt_says">
-        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M38 0H10C4.478 0 0 4.478 0 10V38C0 43.522 4.478 48 10 48H38C43.524 48 48 43.522 48 38V10C48 4.478 43.524 0 38 0ZM37.722 18.474C38.14 27.708 31.254 38.004 19.062 38.004C15.354 38.004 11.904 36.918 8.998 35.054C12.482 35.464 15.958 34.498 18.718 32.336C15.844 32.282 13.42 30.384 12.586 27.776C13.616 27.972 14.628 27.914 15.55 27.664C12.392 27.03 10.214 24.186 10.284 21.144C11.168 21.636 12.182 21.932 13.256 21.966C10.334 20.012 9.506 16.152 11.224 13.2C14.462 17.172 19.3 19.786 24.756 20.06C23.798 15.954 26.916 12 31.154 12C33.04 12 34.748 12.796 35.944 14.074C37.44 13.78 38.846 13.234 40.116 12.482C39.624 14.016 38.584 15.302 37.23 16.114C38.558 15.954 39.824 15.602 41 15.08C40.122 16.392 39.008 17.548 37.722 18.474Z" fill="black"/>
-        </svg>
-      </a>
+<div class="about-me container">
+  <div class="shell">
+    <div class="section__inner">
+      <div class="about__picture">
+        <img src="images/bridget-aboutme.png" alt="Bridget About Me Picture" alt width="150px">
+      </div>
+      <div class="about__section__content">
+          <h2>How did I get here?</h2>
+            <p id="bio">My fondest memories all share one focus: the ability for me to tell stories through tangible experiences.  My childhood consisted of carrying around sketchbooks, markers, paint, beads, string.  Anything that I could get my hands on to create something (anything), I chased after it.  It didn’t end there, and I was restless in my approach.  When my friends came over, I would create complex games and stories from the ground up, mulling over every detail and rule in the hopes of creating the best game ever.</p>
+            <p id="bio2">Though my passion for storytelling never ended there, I became bogged down by the demands of growing older.  Being part of an immigrant family has always been a huge part of my identity because it dictated so many of the choices I made my whole life.  One decision I made was pursuing a degree in a more “traditional” industry -- premedicine and health.  I was drawn to the ability to help others, while making decisions based on research and precision.  However, the very core of my being never stopped yearning for something more creative.  Was there anything out there for me that would allow me to do both?
+            After many years of searching for answers, I finally discovered design through a series of happy coincidences.  From the get go, I knew that design was the answer I had been seeking for all these years.</p>
+            <p id="bio3">Design allows me to choose all of the things I love.</p>
+            <p id="bio4">Though I found myself on a long-winded road, I’m grateful for every discovery I’ve made along the way.  My many years of schooling filled with scientific methodology and research helped unlock my abillity to determine solutions based on data and precision.  My work in healthcare presented me with the keen ability to drive tangible impact through empathic listening and understanding.  My passion of visual arts sharpened my ability to create beautiful interfaces and visual delights.</p>
+            <p id="bio5">If you share a similar enthusiasm and passion, or would like to add more of this to your team, please feel free to drop me a line!</p>
+      </div>
     </div>
   </div>
 
-<!--Footer -->
-    <footer id="footer" class="container">
-      <div class="copyright">
-        <hr/>
-        <h6>© 2018 Bridget Zhong | Designed and Developed by Bridget Zhong</h6>
-      </div>
-    </footer>
-  </body>
+    <!--Contact CTA -->
+        <div class="contact container">
+          <section class="contact">
+            <div class="shell">
+              <div class="contact__section">
+                  <a href="contact.html" id ="contact__button" class="button">CONNECT</a>
+              </div>
+            </div>
+          </section>
+        </div>
+      <!-- Footer -->
+          <footer id="footer" class="container">
+            <div class ="social__media__links__2">
+              <ul id="social__2">
+                <li>
+                  <a href="linkedin.com/bridget-zhong">
+                    <div id="linkedin" class="row">
+                      <img src="images/linkedin.png" alt="Linkedin Icon"/>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="instagram.com/brdgt.png">
+                    <div id="instagram" class="row">
+                      <img src="images/instagram.png" alt ="Instagram Icon">
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="github.com/bridgetzhong">
+                    <div id="github" class="row">
+                      <img src="images/github.png" alt="Github Icon">
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="twitter.com/brdgt_says">
+                    <div id="twitter" class="row">
+                      <img src="images/twitter.png" alt="Twitter Icon">
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            <div class="shell">
+              <div class="small-11 small-centered medium-6 medium-offset-2 medium-uncentered large-uncentered columns">
+                <h6 id="copyright__2">Designed and Developed by Bridget Zhong © 2019</h6>
+              </div>
+            </div>
+          </footer>
+      </body>
 </html>
