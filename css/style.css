@@ -111,30 +111,26 @@ body {
 
 #call {
   margin-bottom: 10rem;
-  margin-left: 120px;
-  margin-top: 400px;
+  margin-left: 2.5rem;
   position: absolute;
 }
 
 #name-headline {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     font-family: 'Lato', serif;
     text-align: left;
-    margin-top: 200px;
-    margin-left: 120px;
-    position: absolute;
+    margin-top: 6rem;
+    margin-left: 2.5rem;
 }
 
 #tagline, h4 {
   font-family:'Open Sans', sans-serif;
   text-align: left;
-  margin-bottom: 3rem;
-  margin-left: 120px;
-  margin-top: 275px;
-  width: 460px;
-  position: absolute;
+  margin-bottom: 3.5rem;
+  margin-left: 2.5rem;
+  max-width:425px;
 }
-
+/*
 .hero-panel {
   height:572px;
   margin-left: 700px;
@@ -143,15 +139,46 @@ body {
   /* width: calc(100% - 10px); -- not sure about this */
 }
 
+.container {
+  overflow:hidden;
+}
+
+.hero-panel {
+  margin-top: 5rem;
+  margin-bottom:0;
+}
+
+.hero__panel {
+  margin-bottom: 0;
+}
+
+.background-wrapper-flex {
+  display: flex;
+}
+
+.background-wrapper-flex > div {
+  flex: 1; /*grow*/
+}
+
+.background-wrapper-headline {
+  margin-right: 2rem;
+}
+
 .hero-scroll {
-  position: absolute;
+  position: relative;
   bottom: 0;
   margin-bottom: 500px auto;
 }
 
 .background-wrapper {
-  width: 500px;
+  padding-left: 3rem;
+  padding-right:3rem;
 }
+
+
+
+
+
 
 
 
@@ -271,24 +298,25 @@ a#call {
   color: white;
 }
 
-.section {
-  padding: 67px 0 61px;
-  min-height: 100vh;
-  display: flex;
+.projects {
+  background: #000000;
 }
+
 
 .projects-collaboreate {
   background: #000000;
   text-align: left;
-  padding-top: 18px;
-  padding-right:70px;
-  padding-left:70px
+  margin-bottom:3rem;
+  padding-top: 5rem;
+  padding-right:5rem;
+  padding-left:5rem;
+  padding-bottom: 5rem;
 
 }
 
 .section__content {
   float: right;
-  padding-top: 4rem;
+  padding-top: 3rem;
   padding-bottom: 2rem;
 }
 
@@ -309,14 +337,10 @@ a#call {
   margin-top: 2.7rem;
 }
 
-/*
-.section__aside {}
-*/
-
 .shell {
   max-width: 1190px;
-  padding-left:20px;
-  padding-right:20px;
+  padding-left:1rem;
+  padding-right:1rem;
   margin: auto;
 }
 
@@ -386,9 +410,9 @@ ul#social li {
 }
 
 .about__section__content p {
-  margin-bottom: 1.4rem;
-  padding-left: 80px;
-  padding-right: 80px;
+  margin-bottom: 2rem;
+  margin-left: 3.5rem;
+  margin-right: 3.5rem;
 }
 
 ul#social__2 {
@@ -478,12 +502,9 @@ ul#social__2 li {
   margin-bottom:0.5rem;
 }
 
-.container {
-  overflow:hidden;
-}
 
 .challenge {
-  margin-top:8rem;
+  margin-top:9rem;
   margin-bottom:5rem;
 }
 
@@ -958,3 +979,193 @@ ul#social__2 li {
   float:right;
   width:800px;
 }
+
+
+
+
+
+
+/******************* MEDIA QUERIES **********************/
+
+@media only screen and (max-width:1352px) {
+
+}
+
+
+
+/************* MEDIA QUERIES NAV *************/
+
+@media only screen and (max-width: 621px) {
+  .top-bar-section a:not(:first-child) {display:none;}
+  .top-bar-section a.icon {
+    float:right;
+    display:block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .top-bar-section.responsive {position: relative;}
+  .top-bar-section.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .top-bar-section a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+
+
+
+
+
+/*Portrait iOS*/
+
+@media only screen and (max-width: 1352px) {
+  .projects-collaboreate {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media only screen and (max-width: 1129px) {
+  .section__aside {
+    max-width: 500px;
+    float:left;
+  }
+  .section__content {
+    float: right;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+  }
+
+  .shell {
+    padding-left:0.3rem;;
+    padding-right:0.3rem;
+  }
+}
+
+
+@media only screen and (max-width: 1148px) {
+  .section__aside {
+    max-width: 0.9rem;
+    float:left;
+    margin-top: 0.3rem;
+    margin-bottom:5rem;
+  }
+
+  .section__content {
+    float: right;
+    padding-top: 3rem;
+    margin-left:5rem;
+    margin-bottom: 5rem;
+  }
+}
+
+
+
+
+/************* MEDIA QUERIES ABOUT ME *************/
+
+
+@media only screen and (max-width: 949px) {
+
+  .about__section__content p {
+    margin-bottom: 2.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+}
+@media only screen and (max-width: 899px) {
+
+  .about__section__content p {
+    margin-bottom: 2.2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+}
+@media only screen and (max-width: 785px) {
+
+  .about__section__content p {
+    margin-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 631px) {
+
+  .about__section__content p {
+    margin-bottom: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+
+  .about__section__content p {
+    margin-bottom: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 14px;
+  }
+
+  @media only screen and (max-width: 549px) {
+
+    .about__section__content p {
+      margin-bottom: 1.5rem;
+    }
+
+    @media only screen and (max-width: 459px) {
+      .about__section__content p {
+        margin-bottom: 1.5rem;
+      }
+      .about__picture {
+          text-align: center;
+          margin-top: 3rem;
+          padding-top: 1rem;
+          padding-bottom: 1rem;
+          margin-bottom: 1.2rem;
+        }
+      }
+
+
+@media only screen and (max-width: 531px) {
+
+  .about__section__content h2 {
+    margin-bottom: 2.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+@media only screen and (max-width: 457px) {
+  .about__section__content p {
+    margin-bottom: 1.2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+}
+
+
+
+
+/* Portrait iOS */
