@@ -1137,6 +1137,7 @@ ul#social__2 li {
     margin-right: 1rem;
     font-size: 14px;
   }
+}
 
   @media only screen and (max-width: 549px) {
 
@@ -1166,6 +1167,7 @@ ul#social__2 li {
     margin-left: 1rem;
     margin-right: 1rem;
   }
+}
 
 @media only screen and (max-width: 457px) {
   .about__section__content p {
@@ -1177,7 +1179,7 @@ ul#social__2 li {
   }
 }
 
-/************* MEDIA QUERIES PROJECTS *************/
+/************* MEDIA QUERIES PROJECTS PAGE *************/
 
 
 /*** not sure why the width below is not working **/
