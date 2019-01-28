@@ -111,7 +111,7 @@ body {
 
 #call {
   margin-bottom: 10rem;
-  margin-left: 2.5rem;
+  margin-left: 1.7rem;
   position: absolute;
 }
 
@@ -120,15 +120,15 @@ body {
     font-family: 'Lato', serif;
     text-align: left;
     margin-top: 6rem;
-    margin-left: 2.5rem;
+    margin-left: 1.7rem;
 }
 
 #tagline, h4 {
   font-family:'Open Sans', sans-serif;
   text-align: left;
   margin-bottom: 3.5rem;
-  margin-left: 2.5rem;
-  max-width:425px;
+  margin-left: 1.7rem;
+  max-width:450px;
 }
 /*
 .hero-panel {
@@ -148,43 +148,34 @@ body {
   margin-bottom:0;
 }
 
-.hero__panel {
-  margin-bottom: 0;
-}
-
 .background-wrapper-flex {
   display: flex;
+  justify-content: space-between;
 }
 
 .background-wrapper-flex > div {
-  flex: 1; /*grow*/
 }
 
 .background-wrapper-headline {
-  margin-right: 2rem;
+  margin-right: 9rem;
+  width:500px;
+  flex-grow: 5; /*grow*/
+}
+
+.background-pic {
+  flex-grow: 1;
 }
 
 .hero-scroll {
+  margin-right: 1rem;
   position: relative;
   bottom: 0;
-  margin-bottom: 500px auto;
+  margin-bottom: 2rem;
+  flex-grow:1;
 }
-
-.background-wrapper {
-  padding-left: 3rem;
-  padding-right:3rem;
-}
-
-
-
-
-
-
-
-
 
 .see-more {
-  margin-left: 670px;
+  margin-left: 1rem;
   position: absolute;
   bottom: 0;
 }
@@ -502,19 +493,25 @@ ul#social__2 li {
   margin-bottom:0.5rem;
 }
 
+.collaboreate__mockup img {
+  max-width:100%;
+  width:100%;
+  height: auto !important;
+}
+
 
 .challenge {
-  margin-top:9rem;
+  margin-top:6rem;
   margin-bottom:5rem;
 }
 
 
 .challenge__main {
   padding-right:5rem;
-  padding-bottom: 5rem;
   margin-bottom: 3.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
+  overflow:hidden;
 }
 
 .challenge__main h3 {
@@ -534,7 +531,8 @@ ul#social__2 li {
   padding-top:2rem;
   padding-left:1rem;
   padding-right:1rem;
-  padding-bottom:5rem;
+  margin-bottom:4rem;
+  overflow:hidden;
 }
 
 .solution__main h3 {
@@ -553,13 +551,17 @@ ul#social__2 li {
 .surveys {
   margin-top: 4rem;
   margin-bottom: 8rem;
+  overflow: hidden;
 }
 
+
 .user__surveys {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  padding-top: 1.5rem;
   padding-left: 2rem;
   padding-right: 2rem;
+  overflow:hidden;
 }
 
 
@@ -592,11 +594,13 @@ ul#social__2 li {
 .analysis {
   margin-top: 4rem;
   margin-bottom:8rem;
+  overflow: hidden;
 }
 
 .competitive__analysis {
   padding-left: 2rem;
   padding-right: 2rem;
+  overflow:hidden;
 }
 
 .competitive__analysis__img {
@@ -621,11 +625,13 @@ ul#social__2 li {
 .personas {
   margin-top: 4rem;
   margin-bottom:8rem;
+  overflow:hidden;
 }
 
 .user__personas {
   padding-left: 2rem;
   padding-right: 2rem;
+  overflow:hidden;
 }
 
 .user__personas__img {
@@ -651,11 +657,13 @@ ul#social__2 li {
 .flows {
   margin-top: 4rem;
   margin-bottom:8rem;
+  overflow:hidden;
 }
 
 .user__flows {
   padding-left: 2rem;
   padding-right: 2rem;
+  overflow:hidden;
 }
 
 .user__flows__img {
@@ -681,11 +689,13 @@ ul#social__2 li {
 .wframes {
   margin-top: 4rem;
   margin-bottom:8rem;
+  overflow:hidden;
 }
 
 .wireframes {
   padding-left: 2rem;
   padding-right: 2rem;
+  overflow:hidden;
 }
 
 
@@ -1050,6 +1060,10 @@ ul#social__2 li {
 
 
 @media only screen and (max-width: 1148px) {
+  .projects {
+    padding-bottom: 14rem;
+  }
+
   .section__aside {
     max-width: 0.9rem;
     float:left;
@@ -1145,7 +1159,6 @@ ul#social__2 li {
 
 
 @media only screen and (max-width: 531px) {
-
   .about__section__content h2 {
     margin-bottom: 2.5rem;
     padding-left: 1rem;
@@ -1162,10 +1175,16 @@ ul#social__2 li {
     margin-left: 1rem;
     margin-right: 1rem;
   }
-
 }
 
+/************* MEDIA QUERIES PROJECTS *************/
 
 
-
-/* Portrait iOS */
+/*** not sure why the width below is not working **/
+@media only screen and (max-width: 1293px) {
+  .challenge__main p {
+    float:right;
+    width:200px;
+    font-size: 14px;
+    }
+  }
