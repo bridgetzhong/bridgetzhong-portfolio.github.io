@@ -1144,6 +1144,7 @@ ul#social__2 li {
     .about__section__content p {
       margin-bottom: 1.5rem;
     }
+  }
 
     @media only screen and (max-width: 459px) {
       .about__section__content p {
@@ -1190,3 +1191,10 @@ ul#social__2 li {
     font-size: 14px;
     }
   }
+
+@media only screen and (max-width: 768px) {
+  .deliverables__column__flex {
+    display: flex;
+    flex-direction:column;
+  }
+}
