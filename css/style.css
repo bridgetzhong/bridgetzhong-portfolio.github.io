@@ -153,7 +153,21 @@ body {
   justify-content: space-between;
 }
 
-.background-wrapper-flex > div {
+@media only screen and (max-width: 705px) {
+  .background-wrapper-flex {
+    display:block;
+    }
+  .background-wrapper-headline {
+    margin-top:2rem;
+  }
+  .background-pic {
+    width: 25em;
+    margin-left: 8rem;
+  }
+  .hero-scroll {
+    margin-bottom: 0rem;
+    margin-left: 13rem;
+  }
 }
 
 .background-wrapper-headline {
@@ -215,6 +229,7 @@ p {
   color: #000000;
   text-align: left;
   line-height: 1.5;
+  font-size: 14px;
 }
 
 .footer {
@@ -253,7 +268,7 @@ h8 {
   font-weight: bold;
 }
 
-<!-- button -->
+/*button*/
 a#call {
     font-size: 1rem;
     font-weight: 700;
@@ -290,14 +305,14 @@ a#call {
 }
 
 .projects {
-  background: #000000;
+  background: #111111;
 }
 
 
 .projects-collaboreate {
-  background: #000000;
+  background: #111111;
   text-align: left;
-  margin-bottom:3rem;
+  margin-bottom:5rem;
   padding-top: 5rem;
   padding-right:5rem;
   padding-left:5rem;
@@ -305,10 +320,19 @@ a#call {
 
 }
 
+.section__inner {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center
+}
+
 .section__content {
-  float: right;
+  display: flex;
+  margin-left: 6rem;
   padding-top: 3rem;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
+  flex-direction:column;
 }
 
 #project-headline {
@@ -325,7 +349,17 @@ a#call {
 }
 
 .section__actions {
-  margin-top: 2.7rem;
+  margin-top: 3rem;
+}
+
+.section__aside {
+  margin-right:6rem;
+}
+
+.section__aside img {
+  max-width:100%;
+  width:100%;
+  height: auto !important;
 }
 
 .shell {
@@ -459,6 +493,7 @@ ul#social__2 li {
   text-align:center;
   margin-bottom: 3.5rem;
   line-height: 1.65rem;
+  font-size:16px;
 }
 
 .design__three__column {
@@ -511,11 +546,12 @@ ul#social__2 li {
   margin-bottom: 3.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  overflow:hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .challenge__main h3 {
-  float:left;
   font-size: 1rem;
   color: #9E9E9E;
   font-weight: bold;
@@ -523,7 +559,6 @@ ul#social__2 li {
 }
 
 .challenge__main p {
-  float:right;
   width:800px;
 }
 
@@ -531,12 +566,12 @@ ul#social__2 li {
   padding-top:2rem;
   padding-left:1rem;
   padding-right:1rem;
-  margin-bottom:4rem;
-  overflow:hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .solution__main h3 {
-  float:left;
   font-size: 1rem;
   color: #9E9E9E;
   font-weight: bold;
@@ -544,7 +579,6 @@ ul#social__2 li {
 }
 
 .solution__main p {
-  float:right;
   width: 800px;
 }
 
@@ -561,20 +595,22 @@ ul#social__2 li {
   padding-top: 1.5rem;
   padding-left: 2rem;
   padding-right: 2rem;
-  overflow:hidden;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
 }
 
 
 .user__surveys__img {
-  float:left;
   margin-right: 1rem;
 }
 
 .user__surveys__content {
-  float:right;
+  display: flex;
+  flex-direction:column;
   margin-left:1rem;
   margin-top:1rem;
-  max-width: 500px;
+  max-width: 30rem;
 }
 
 /***
@@ -600,19 +636,21 @@ ul#social__2 li {
 .competitive__analysis {
   padding-left: 2rem;
   padding-right: 2rem;
-  overflow:hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .competitive__analysis__img {
-  float:right;
   margin-right: 1rem;
 }
 
 .competitive__analysis__content {
-  float:left;
+  display: flex;
+  flex-direction:column;
   margin-left:1rem;
   margin-top: 7rem;
-  max-width: 500px;
+  max-width: 30rem;
 }
 
 .competitive__analysis__content h3 {
@@ -625,25 +663,26 @@ ul#social__2 li {
 .personas {
   margin-top: 4rem;
   margin-bottom:8rem;
-  overflow:hidden;
 }
 
 .user__personas {
   padding-left: 2rem;
   padding-right: 2rem;
-  overflow:hidden;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
 }
 
 .user__personas__img {
-  float:left;
   margin-right: 1rem;
 }
 
 .user__personas__content {
-  float:right;
+  display:flex;
+  flex-direction:column;
   margin-left:1rem;
   margin-top: 4rem;
-  max-width: 500px;
+  max-width: 30rem;
 }
 
 .user__personas__content h3 {
@@ -657,25 +696,27 @@ ul#social__2 li {
 .flows {
   margin-top: 4rem;
   margin-bottom:8rem;
-  overflow:hidden;
 }
 
 .user__flows {
   padding-left: 2rem;
   padding-right: 2rem;
-  overflow:hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .user__flows__img {
-  float:right;
   margin-right: 1rem;
+  height:auto;
 }
 
 .user__flows__content {
-  float:left;
   margin-left:1rem;
   margin-top: 3rem;
-  max-width: 500px;
+  max-width: 30rem;
+  display:flex;
+  flex-direction: column;
 }
 
 .user__flows__content h3 {
@@ -974,7 +1015,9 @@ ul#social__2 li {
   padding-left: 1rem;
   padding-right: 1rem;
   border-bottom: 1px dotted #C6E4E6;
-  overflow:hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .lessons__title h3 {
@@ -1032,50 +1075,54 @@ ul#social__2 li {
 
 
 
-/*Portrait iOS*/
+/*HOMEPAGE*/
 
 @media only screen and (max-width: 1352px) {
   .projects-collaboreate {
-    padding-left: 3rem;
-    padding-right: 3rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
   }
 }
 
-@media only screen and (max-width: 1129px) {
+
+@media only screen and (max-width: 1272px) {
   .section__aside {
-    max-width: 500px;
-    float:left;
+    margin-right: 5rem;
   }
   .section__content {
-    float: right;
-    padding-top: 4rem;
-    padding-bottom: 3rem;
-  }
-
-  .shell {
-    padding-left:0.3rem;;
-    padding-right:0.3rem;
+    margin-left: 5rem;
   }
 }
 
-
+/*
 @media only screen and (max-width: 1148px) {
   .projects {
     padding-bottom: 14rem;
   }
-
   .section__aside {
     max-width: 0.9rem;
     float:left;
     margin-top: 0.3rem;
     margin-bottom:5rem;
   }
-
   .section__content {
     float: right;
     padding-top: 3rem;
     margin-left:5rem;
     margin-bottom: 5rem;
+  }
+}
+*/
+
+@media only screen and (max-width:960px) {
+  .background-wrapper-headline {
+    float:none;
+  }
+}
+
+@media only screen and (max-width: 864px) {
+  .background-wrapper-headline {
+    margin-right:1.5rem;
   }
 }
 
@@ -1184,17 +1231,122 @@ ul#social__2 li {
 
 
 /*** not sure why the width below is not working **/
-@media only screen and (max-width: 1293px) {
-  .challenge__main p {
-    float:right;
-    width:200px;
-    font-size: 14px;
+@media only screen and (max-width:1280px) {
+  .challenge__main {
+    padding-left:2.5rem;
+    padding-right:2.5rem;
+  }
+  .solution__main {
+    padding-left: 2.5rem;
+    padding-right:2.5rem;
+  }
+}
+
+@media only screen and (max-width: 1058px) {
+  .collaboreate__intro__description {
+    padding-left: 50px;
+    padding-right: 50px;
     }
+  .challenge__main p {
+      max-width: 45rem;
+    }
+  .solution__main p {
+      max-width:45rem;
+    }
+  img.expand {
+    width:25em;
+  }
+  .user__flows__content {
+    max-width:25rem;
+  }
+  .user__personas__content {
+    max-width:25rem;
+  }
+  .competitive__analysis__content {
+    max-width:25rem;
+  }
+  .user__surveys__content {
+    max-width:25rem;
+  }
+}
+/*
+@media only screen and (max-width: 963px) {
+  img.expand {
+    width:22em;
+  }
+}*/
+
+@media only screen and (max-width: 969px) {
+  .challenge__main p {
+    max-width: 40rem;
+  }
+  .solution__main p {
+    max-width:40rem;
+  }
+  .challenge {
+    margin-bottom:3.5rem;
+    margin-top:3.5rem;
+  }
+}
+
+@media only screen and (max-width: 879px) {
+  .challenge__main p {
+    max-width: 37rem;
+  }
+  .solution__main p {
+    max-width:37rem;
+  }
+  .challenge {
+    margin-bottom:3rem;
+    margin-top:3.5rem;
+  }
+}
+
+
+@media only screen and (max-width: 825px) {
+  .user__surveys__content {
+    margin-bottom:2rem;
+    float:none;
   }
 
-@media only screen and (max-width: 768px) {
-  .deliverables__column__flex {
-    display: flex;
-    flex-direction:column;
+}
+
+
+  @media only screen and (max-width: 770px) {
+    .collaboreate__intro__description {
+      padding-left: 30px;
+      padding-right: 30px;
+      font-size: 14px;
+      }
+      .deliverables__column__flex {
+        display: flex;
+        flex-direction:column;
+      }
+      .center {
+        margin-bottom:3rem;
+      }
+    }
+
+
+@media only screen and (max-width: 798px) {
+  .challenge__main p {
+    padding-right: 2rem;
+    float:none;
+    margin-top:2rem;
+  }
+  .solution__main p {
+    padding-right:2rem;
+    float:none;
+    margin-top:2rem;
+  }
+  .challenge {
+    margin-bottom:3.5rem;
+    margin-top:3.5rem;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .collaboreate__intro__description p {
+    font-size:14px;
   }
 }
