@@ -160,14 +160,20 @@ body {
   max-width:450px;
 }
 
+.background__pic {
+  flex-grow: 1;
+  margin-right: 0;
+}
 
 .background-pic {
+  width: 70%;
+  margin-right: 0;
   flex-grow: 1;
-  max-width: 68%;
+  float: right;
 }
 
 .hero-scroll {
-  margin-right: 3rem;
+  margin-right: 1rem;
   position: relative;
   bottom: 0;
   margin-bottom: 2rem;
@@ -177,6 +183,10 @@ body {
 .see-more {
   position: absolute;
   bottom: 0;
+}
+
+.contact__headline {
+  margin-left: 1rem;
 }
 
 
