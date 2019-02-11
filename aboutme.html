@@ -33,31 +33,21 @@
 
         <section class ="top-bar-section">
           <!-- Right Navbar section -->
-          <div class="nav-left" style="float:left">
-            <a href=index.html><img src="images/logo.png" alt width="42";></a>
-          </div>
+      <!--    <div class="nav-left" style="float:left">
+            <a href=index.html><svg width="42" height="48" viewBox="0 0 42 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="41.0769" height="48" fill="#FF3547"/><path d="M9.38917 5.37744V20.0759M9.38917 20.0759L9.38916 38.3458C11.7495 40.6287 15.2052 42.4863 17.9858 42.4863C23.0052 42.4863 29.7319 38.801 30.0878 28.3113C30.3638 20.1739 24.1593 14.4804 17.9858 14.9155C14.9038 15.1327 13.0702 15.5386 9.38917 20.0759Z" stroke="black" stroke-width="0.75"/><path d="M13.1598 21.0062V7.51604L9.57495 5.71375M13.1598 21.0062L13.1598 36.912C15.5202 39.1949 18.9759 42.4862 21.7565 42.4862C26.7759 42.4862 34.0732 38.801 34.4291 28.3113C34.7051 20.1739 27.9299 14.4803 21.7565 14.9154C18.6745 15.1326 15.0899 18.5979 13.1598 21.0062Z" stroke="black" stroke-width="0.75"/></svg></a>
+          </div> -->
           <div class="nav-right" style="float:right">
-          <ul class="right">
-            <li class="has-dropdown">
-              <a href="#">PROJECTS
-                <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M7.18118 12L0.351947 0.171424L14.0104 0.171425L7.18118 12Z" fill="black"/>
-                </svg>
-              </a>
-              <!-- dropdown
-              <ul class="dropdown">
-                <li><a href="projects.html">COLLABOREATE</a></li>
-              </ul>
-              --->
-            </li>
-            <li>
-              <a href="aboutme.html">ABOUT</a>
-            </li>
-            <li>
-              <a href="contact.html"><strong>CONNECT</strong></a>
-            </li>
-          </ul>
-        </div>
+            <ul class="right">
+              <li class="has-dropdown">
+                <a href="project.html"><h2>projects</h2></a>
+                <ul class="dropdown">
+                  <li><a href="project.html">COLLABOREATE</a></li>
+                </ul>
+              </li>
+              <li class="no-dropdown"><a href="aboutme.html"><h2>about</h2></a></li>
+              <li class="no-dropdown"><a href="mailto:bri.zhong@gmail.com"><h2>contact</h2></a></li>
+            </ul>
+          </div>
         </section>
       </nav>
     </div>
@@ -66,7 +56,7 @@
 <!--Hero Panel -->
 <div class="about-me container">
   <div class="shell">
-    <div class="section__inner">
+    <div class="about__me">
       <div class="about__picture">
         <img src="images/bridget-aboutme.png" alt="Bridget About Me Picture" alt width="150px">
       </div>
@@ -79,57 +69,62 @@
             <p id="bio4">Though I found myself on a long-winded road, I’m grateful for every discovery I’ve made along the way.  My many years of schooling filled with scientific methodology and research helped unlock my abillity to determine solutions based on data and precision.  My work in healthcare presented me with the keen ability to drive tangible impact through empathic listening and understanding.  My passion of visual arts sharpened my ability to create beautiful interfaces and visual delights.</p>
             <p id="bio5">If you share a similar enthusiasm and passion, or would like to add more of this to your team, please feel free to drop me a line!</p>
       </div>
+      <div class="about__me__contact"
+        <div class="contact__button">
+          <a href="contact.html" id ="contact__button" class="button">CONNECT</a>
+        </div>
+      </div>
     </div>
   </div>
+</div>
 
-    <!--Contact CTA -->
+    <!--Contact CTA
         <div class="contact container">
-          <section class="contact">
             <div class="shell">
-              <div class="contact__section">
+              <div class="contact__button">
                   <a href="contact.html" id ="contact__button" class="button">CONNECT</a>
               </div>
             </div>
-          </section>
-        </div>
+        </div> -->
       <!-- Footer -->
           <footer id="footer" class="container">
+            <div class="shell">
+              <div class="small-11 small-centered medium-6 medium-offset-2 medium-uncentered large-uncentered columns">
+                <h6 id="copyright__2">Copyright © Bridget Zhong 2019. All rights reserved.</h6>
+              </div>
             <div class ="social__media__links__2">
               <ul id="social__2">
                 <li>
                   <a href="linkedin.com/bridget-zhong">
                     <div id="linkedin" class="row">
-                      <img src="images/linkedin.png" alt="Linkedin Icon"/>
+                      <img src="images/linkedin.png" class="linkedin__icon"/>
                     </div>
                   </a>
                 </li>
                 <li>
                   <a href="instagram.com/brdgt.png">
                     <div id="instagram" class="row">
-                      <img src="images/instagram.png" alt ="Instagram Icon">
+                      <img src="images/instagram.png" class ="instagram__icon">
                     </div>
                   </a>
                 </li>
                 <li>
                   <a href="github.com/bridgetzhong">
                     <div id="github" class="row">
-                      <img src="images/github.png" alt="Github Icon">
+                      <img src="images/github.png" class="github__icon">
                     </div>
                   </a>
                 </li>
                 <li>
                   <a href="twitter.com/brdgt_says">
                     <div id="twitter" class="row">
-                      <img src="images/twitter.png" alt="Twitter Icon">
+                      <img src="images/twitter.png" class="twitter__icon">
                     </div>
                   </a>
                 </li>
               </ul>
-            <div class="shell">
-              <div class="small-11 small-centered medium-6 medium-offset-2 medium-uncentered large-uncentered columns">
-                <h6 id="copyright__2">Designed and Developed by Bridget Zhong © 2019</h6>
-              </div>
             </div>
-          </footer>
+          </div>
+        </footer>
       </body>
 </html>
