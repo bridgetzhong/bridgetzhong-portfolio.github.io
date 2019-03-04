@@ -17,54 +17,23 @@
 
   <body>
     <header>
-      <div class="contain-to-grid sticky" id="part-home">
-        <nav class="top-bar" data-topbar role="navigation" data-options="sticky_on: [small, medium, large]">
-            <ul class="title-area">
-              <li class="name">
-              <!-- <h1><a href="index.html">BRIDGET ZHONG</a></h1> -->
-              </li>
-              <li class="toggle-topbar menu-icon">
-                <a href="#">
-                  <!-- BRIDGET ZHONG logo -->
-                  <span></span>
-                </a>
-              </li>
-            </ul>
-
-          <section class ="top-bar-section">
-            <!-- Right Navbar section -->
-            <div class="nav-left" style="float:left">
-              <a href=index.html><svg width="40" height="45" viewBox="0 0 40 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M1.03516 0.459717L1.03516 17.62M1.03516 17.62L1.03516 37.6777C1.03516 38.4907 1.35765 39.2776 1.97929 39.8015C4.66106 42.062 8.17916 43.7837 11.0716 43.7837C16.9317 43.7837 24.785 39.4812 25.2004 27.2347C25.5228 17.7344 18.279 11.0872 11.0716 11.5952C7.47344 11.8488 5.3327 12.3228 1.03516 17.62Z" stroke="black"/>
-  <path d="M5.43738 18.7063L5.43738 4.80625C5.43738 3.6723 4.79802 2.63526 3.78491 2.12592L1.25208 0.852539M5.43738 18.7063L5.43738 36.004C5.43738 36.817 5.765 37.5964 6.35393 38.1569C9.03913 40.7124 12.5715 43.7839 15.4738 43.7839C21.3339 43.7839 29.8534 39.4814 30.2688 27.2349C30.5912 17.7345 22.6812 11.0874 15.4738 11.5953C11.8757 11.8489 7.69067 15.8946 5.43738 18.7063Z" stroke="black"/>
-  <circle cx="36.215" cy="40.8767" r="2.407" stroke="black"/>
-                </svg>
-</div>
-
-            <div class="navbar-toggler">
-              <a href=toggle-menu><svg width="39" height="23" viewBox="0 0 39 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="0.739929" y="9.69456" width="38.0614" height="3.57" fill="#111111"/>
-                  <rect x="21.7368" y="19.1736" width="17.0645" height="3.57" fill="#111111"/>
-                  <rect x="11.6957" y="0.219391" width="27.1056" height="3.56605" fill="#111111"/>
-                </svg>
-              </a>
-            </div>
-
-            <div class="nav-right" style="float:right">
-              <ul class="right">
-                <li class="has-dropdown">
-                  <a href="project.html"><h2>projects</h2></a>
-                  <ul class="dropdown">
-                    <li><a href="project.html">COLLABOREATE</a></li>
-                  </ul>
-                </li>
-                <li class="no-dropdown"><a href="aboutme.html"><h2>about</h2></a></li>
-                <li class="no-dropdown"><a href="mailto:bri.zhong@gmail.com"><h2>contact</h2></a></li>
-              </ul>
-            </div>
-          </section>
-        </nav>
-      </div>
+      <nav id="navigation">
+        <a href="index.html" class="personal__logo"><svg width="40" height="45" viewBox="0 0 40 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1.03516 0.459717L1.03516 17.62M1.03516 17.62L1.03516 37.6777C1.03516 38.4907 1.35765 39.2776 1.97929 39.8015C4.66106 42.062 8.17916 43.7837 11.0716 43.7837C16.9317 43.7837 24.785 39.4812 25.2004 27.2347C25.5228 17.7344 18.279 11.0872 11.0716 11.5952C7.47344 11.8488 5.3327 12.3228 1.03516 17.62Z" stroke="black"/>
+          <path d="M5.43738 18.7063L5.43738 4.80625C5.43738 3.6723 4.79802 2.63526 3.78491 2.12592L1.25208 0.852539M5.43738 18.7063L5.43738 36.004C5.43738 36.817 5.765 37.5964 6.35393 38.1569C9.03913 40.7124 12.5715 43.7839 15.4738 43.7839C21.3339 43.7839 29.8534 39.4814 30.2688 27.2349C30.5912 17.7345 22.6812 11.0874 15.4738 11.5953C11.8757 11.8489 7.69067 15.8946 5.43738 18.7063Z" stroke="black"/>
+          <circle cx="36.215" cy="40.8767" r="2.407" stroke="black"/></svg>
+        </a>
+        <a aria-label="mobile menu" class="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+        <ul class="menu-left">
+          <li><a href="project.html"><h2>projects</h2></a></li>
+          <li><a href="aboutme.html"><h2>about</h2></a></li>
+          <li><a href="mailto:bri.zhong@gmail.com"><h2>contact</h2></a></li>
+        </ul>
+      </nav>
     </header>
 
 
