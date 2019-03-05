@@ -12,9 +12,11 @@ $('.menu-left a').on('click', function() {
   $('.menu-left').removeClass('collapse');
 });
 
+// SHOW/HIDE NAV
+
 
 // Hide Header on on scroll down
-var did<a href="https://www.jqueryscript.net/tags.php?/Scroll/">Scroll</a>;
+var didScroll;
 var lastScrollTop = 0;
 var delta = 5;
 var navbarHeight = $('header').outerHeight();
