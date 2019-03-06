@@ -1,5 +1,5 @@
 *,
-*:before,
+*::before,
 *:after {padding: 0;margin: 0;outline: 0;box-sizing: border-box;}
 
 
@@ -499,7 +499,7 @@ a#call {
 
 .button {
   font-family: 'Raleway';
-  font-weight: 600;
+  font-weight: 500;
   background-color: #FFFFFF;
   letter-spacing: 1px;
   color: #000000;
@@ -518,7 +518,6 @@ a#call {
   background-color: #FF3547;
   border-color: #FF3547;
   color: white;
-  /*box-shadow: 0 6px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);*/
 }
 
 
@@ -559,7 +558,6 @@ a#call {
   font-weight: 500;
   margin-bottom: 1rem;
   font-size: 1.4rem;
-  /* font-weight less than 600 doesn't work */
 }
 
 #project-description {
@@ -932,9 +930,11 @@ ul#social__2 li {
   .social__media__links__2 {
     margin:auto;
     margin-bottom: 0.5rem;
+    align-items: center;
   }
 
   ul#social__2 {
+    padding-left: 2rem;
     list-style-type: none;
     text-align: left;
     margin: auto;
@@ -2118,7 +2118,6 @@ header nav ul li {
 }
 
 
-
 header nav ul li a {
   display: block;
 }
@@ -2142,7 +2141,7 @@ ul li { padding: .5em 0; }
 ul.menu-left {
   display: block;
   max-height: 0;
-  overflow: hidden;
+  /*overflow: hidden;*/
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -ms-transition: all 0.3s ease-out;
