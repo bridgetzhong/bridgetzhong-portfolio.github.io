@@ -211,6 +211,8 @@ body {
     text-align: left;
     margin-top: 15%;
     font-size: 2.5em;
+    font-weight: 600;
+    -webkit-font-smoothing: antialiased;
 }
 
 #name-tagline, h1 {
@@ -219,6 +221,8 @@ body {
     text-align: left;
     font-size: 2.5em;
     margin-top: 0.1rem;
+    font-weight: 600;
+    -webkit-font-smoothing: antialiased;
 }
 
 
@@ -612,15 +616,18 @@ a#call {
 
 
 .section__aside {
-
+  margin-left: 3rem;
 }
-
-
 
 .section__aside img {
   width: 70%;
   height: auto !important;
 }
+
+.section__content {
+  margin-right: 1.7rem;
+}
+
 
 @media only screen and (max-width: 1300px) {
   .section__content {
@@ -912,8 +919,8 @@ ul#social li {
 
 .about__section__content p {
   margin-bottom: 2rem;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .about__me__contact {
