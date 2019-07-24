@@ -26,6 +26,15 @@
   height: 3px;
 }
 
+a:link {
+  color: #ff3446;
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom: 2px solid
+}
+
 
 /**** nav ****/
 .contain-to-grid {
@@ -1249,6 +1258,11 @@ ul#social li {
 
 .social__media__links__2 {
   margin-left: 4%;
+}
+
+ul#social__1 {
+  display: flex;
+  flex-direction: row;
 }
 
 ul#social__2 {
