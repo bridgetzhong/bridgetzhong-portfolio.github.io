@@ -1,3 +1,7 @@
+
+
+
+
 // TOGGLE HAMBURGER & COLLAPSE NAV
 {
 
@@ -11,6 +15,8 @@ $('.menu-left a').on('click', function() {
   $('.nav-toggle').removeClass('open');
   $('.menu-left').removeClass('collapse');
 });
+
+
 
 // SHOW/HIDE NAV
 
