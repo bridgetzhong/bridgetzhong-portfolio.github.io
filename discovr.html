@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bridget Zhong | UX Designer</title>
+
+    <!--- CSS STYLESHEETS --->
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!--- FONT --->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Open+Sans:400,600,700|Raleway:400,500,600,700,800" rel="stylesheet">
+  </head>
+
+<!--- HEADER -->
+  <body>
+    <header>
+      <nav id="navigation">
+        <a href="index.html" class="personal__logo animated delayed-1s slideInDown"><svg width="40" height="45" viewBox="0 0 40 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1.03516 0.459717L1.03516 17.62M1.03516 17.62L1.03516 37.6777C1.03516 38.4907 1.35765 39.2776 1.97929 39.8015C4.66106 42.062 8.17916 43.7837 11.0716 43.7837C16.9317 43.7837 24.785 39.4812 25.2004 27.2347C25.5228 17.7344 18.279 11.0872 11.0716 11.5952C7.47344 11.8488 5.3327 12.3228 1.03516 17.62Z" stroke="black"/>
+          <path d="M5.43738 18.7063L5.43738 4.80625C5.43738 3.6723 4.79802 2.63526 3.78491 2.12592L1.25208 0.852539M5.43738 18.7063L5.43738 36.004C5.43738 36.817 5.765 37.5964 6.35393 38.1569C9.03913 40.7124 12.5715 43.7839 15.4738 43.7839C21.3339 43.7839 29.8534 39.4814 30.2688 27.2349C30.5912 17.7345 22.6812 11.0874 15.4738 11.5953C11.8757 11.8489 7.69067 15.8946 5.43738 18.7063Z" stroke="black"/>
+          <circle cx="36.215" cy="40.8767" r="2.407" stroke="black"/></svg>
+        </a>
+        <a aria-label="mobile menu" class="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+        <ul class="menu-left animated delayed-1s slideInDown">
+          <li><a href="collaborate.html"><h2>work</h2></a></li>
+          <li><a href="about.html"><h2>about</h2></a></li>
+          <li><a href="mailto:bri.zhong@gmail.com"><h2>contact</h2></a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+<!--Collaboreate Panel -->
+<div class="collaboreate-intro container">
+  <section class="collaboreate__intro">
+      <div class="shell">
+        <div class="collaboreate__intro__main">
+          <div class="collaboreate__intro__description">
+            <h2>Discovr</h2>
+            <p>The shift of music consumption to the digital sphere has created segmented and divisive patterns in how users discover music. Discovr is a music discovery app that allows users discover new music holistically.</p>
+            <a href ="https://www.figma.com/proto/KFCclvd7D6eRlnf9jIzWHZcG/Music-Discovery-App?node-id=48%3A80&scaling=scale-down" class ="button">View Prototype</a>
+          </div>
+        </div>
+
+<!--design roles/delivs/tools-->
+        <div class="design__three__column">
+          <div class="deliverables__column__flex">
+            <!---design roles--->
+            <div class="design__roles">
+              <div class="design__roles__icon">
+                <!--light bulb icon -->
+                <svg width="30px" height="40px" viewBox="0 0 46 45" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <rect x="0.973511" y="0.30127" width="44.053" height="44.053" fill="url(#pattern0)"/>
+                <defs>
+                  <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0" transform="scale(0.015625)"/>
+                  </pattern>
+                  <image id="image0" width="64" height="64" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAVJSURBVHhe7ZtHqCVFFIafccwzZnShGEcxISq4MoEBE5hwNuqgIIKKYeNCwYyCCOaFYEBM6MqwUQTBAIo5YUBFFBPmnMP3tXOgp+i+t/pdb/ftO/eHD15V3a4+p7qquupUv7mZZppppha0K5wD98Er8DX8vgz/fhks8ze7wFRoHTgX3oR/GvIGeK119E6rwtnwFYRDn8OtcBLsARvB6svw7z3BstvA38Z1X8JZYJ290HbwAoQDT8Dh0MSB1eAIeBKinufBuidaOvoDaPC7cBiMKut8H6zzO/g/6hyLlsAfoKF3QTp2V4J94EqwV3wMv4EN9g48BltAldaDe8C6nTSPh4nSkfAnaOAlZpS0MpwMOmn5IA6A0CLw2pANeBn4OxvOnjE27QcnwFpFarAWw/egYZebUZIT3DMQDn4A18LBsC2sCfYU/94BQjvBr/AslPPVFWBd34LXDZM+6Is+ZetTiJtcBxpUJSe2mPDs9qnsur7jP4RTIHci3BTeA+u1cQ+CkD0hhoMT4ypQJW3Wdn3wt59AtuxeT4MXBpdCKl91lmnsumZUyCdcZ+Qg2Xh3g/Xb5TeHkGUxMZ5hRqIYKoG+HAqN5ertRvB9no5tHYv3/LhmZp/2BfAAOFzK8iF57y9gbTNK8mFpm7brw1jkKk0DnNG70lOgDfbE1uVS1Zu7YOlKvn204bUi1aJ2A2/8GXS5RHXFGMvmuol6LIru79q+a90O2uJ+oTW5bfWmbl661lLQlnuLVEtyP+9N3dV1rb1AW4wntKZ4/W1YpLqVNmiLr8N5K130lPFVk8qFiWUudbuWNmiLS+dU2X6V990plqX6BSxLFyddSBu05ecitbya+pUtt7JWsmWR6lbaoC0fFamW5N7dmx5VpLqVNmjLo0WqJbkv8KY3Fal8Oe7cwW1cpJaXeZZVzTmDpA3aku5VxqrdwZs6865hRqZ00Oteh3Ij+Ld5lvmbXDn+tcHrXJ22qhfBG59WpPJU5Wg5L22YYToVvE5bWtdx4M0Nniw0I1M6+Bw4C4/ivDGBmIyNR7Yu9+puhTXgBjPmobohkaNrwGttSG0Zi8oBkaqI0M5gJNiA6N5mNJQOSFPnPUTxnt67auyPHBCpColdDFUyzG255wB2yyaKupvI6M9b4HVXm1EhGyDqFn1pFLXKDYoql6IRGDWG10RhYBPdAl7j5meBGTWyd14P8wqK7gu5YXHlkVWcCLk9zVXTBvBAxN//BDuakaEIi+vTWOVNNO5HSGP5dWrSAFtBPM0mr95WdQdooEMiJ1SW2wCeEMWcdL8ZkypD5XGgcZ4ZQ+QrLGdXdjpYpwcsHplNtA6Ev8Ht6dZmjCgPRDwVtgGMAvdCd4IG31ykRtNVYF0ejvRG28NfYJRmMzNq5LgetPuzu8fbpXffDTlZafj5RapalkudPPez/PEi1TOdCBo/6AkPa4CHwXJfsb1ThKo83l6/hmiAqjJx1rd8G+ilwsFRaRJ0mShVOTMfeqtRHVghGmADMMZodNfPZP2G6EF4FaamAeocjI+rhtFbVTmTYiPYGDaKjWMj2VgReZbeKhyoc9DuP0i9bwADFzqQfsRUlu/7qiFixMdrjS/0Vi+BTuxfpP7TmRAORoBjENbRW0VwUoeV4evY2gam0yFyNLwNll8EvZVffMZT9ns/ZRg75gC7fyobyU9uveYbaBoynzgdC/Eh9UPgcKj6qtQvPfyG+BHwt15jT5gKHQN+M6xjOXioYS+ZKjkcHM/l/yZJsexC2ASmWuFwKE1PvfycJZwO3PuvMDoEItgRzjsBzjTTTG1rbu5fNqcJAW4bhykAAAAASUVORK5CYII="/>
+                </defs>
+                </svg>
+              </div>
+              <div class="design__roles__description">
+                <h5>Design Roles</h5>
+                <ul class="center">
+                  <li><p>UX Research</p></li>
+                  <li><p>UI Design</p></li>
+                  <li><p>Branding</p></li>
+                </ul>
+              </div>
+            </div>
+            <!-- deliverables -->
+            <div class="design__roles">
+              <div class="design__roles__icon">
+                <svg width="30px" height="40px" viewBox="0 0 65 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0)">
+                    <path d="M62.5 7.5C62.5 2.9 59 0.5 55.5 0.5C52.3 0.5 49 2.6 48.6 6.5H3.5C2.9 6.5 2.5 6.9 2.5 7.5V51.9C2.5 52.5 2.9 52.9 3.5 52.9H52.6C58.1 52.9 62.6 48.4 62.6 42.9V7.5H62.5ZM55.5 2.5C58.2 2.5 60.5 4.3 60.5 7.5V37.8C59.2 36.5 57.3 35.8 55.5 35.8C53.7 35.8 51.8 36.5 50.5 37.8V7.5C50.5 4.1 53.1 2.5 55.5 2.5ZM52.5 50.9H4.5V8.5H48.6V42.8C48.6 43.4 49 43.8 49.6 43.8C50.2 43.8 50.6 43.4 50.6 42.8C50.6 39.4 53.2 37.8 55.6 37.8C63.7 37.8 61.3 50.9 52.5 50.9Z" fill="black"/>
+                    <path d="M9.4 24.6H43.6C44.2 24.6 44.6 24.2 44.6 23.6V16.2C44.6 15.6 44.2 15.2 43.6 15.2H9.4C8.8 15.2 8.4 15.6 8.4 16.2V23.6C8.4 24.1 8.8 24.6 9.4 24.6ZM10.4 17.2H42.6V22.6H10.4V17.2Z" fill="black"/>
+                    <path d="M9.4 38.2H21.9C22.5 38.2 22.9 37.8 22.9 37.2V30C22.9 29.4 22.5 29 21.9 29H9.4C8.8 29 8.4 29.4 8.4 30V37.2C8.4 37.7 8.8 38.2 9.4 38.2ZM10.4 30.9H20.9V36.1H10.4V30.9Z" fill="black"/>
+                    <path d="M43.6 28.8999H31.1C30.5 28.8999 30.1 29.2999 30.1 29.8999V37.0999C30.1 37.6999 30.5 38.0999 31.1 38.0999H43.6C44.2 38.0999 44.6 37.6999 44.6 37.0999V29.8999C44.6 29.3999 44.2 28.8999 43.6 28.8999ZM42.6 36.1999H32.1V30.9999H42.6V36.1999Z" fill="black"/>
+                    <path d="M44.7 42.2H8.3C7.7 42.2 7.3 42.6 7.3 43.2C7.3 43.8 7.7 44.2 8.3 44.2H44.6C45.2 44.2 45.6 43.8 45.6 43.2C45.6 42.6 45.2 42.2 44.7 42.2Z" fill="black"/>
+                    <path d="M55.5 11.5C56.1 11.5 56.5 11.1 56.5 10.5V7.5C56.5 6.9 56.1 6.5 55.5 6.5C54.9 6.5 54.5 6.9 54.5 7.5V10.5C54.5 11 55 11.5 55.5 11.5Z" fill="black"/>
+                    <path d="M55.5 18.7C56.1 18.7 56.5 18.3 56.5 17.7V14.7C56.5 14.1 56.1 13.7 55.5 13.7C54.9 13.7 54.5 14.1 54.5 14.7V17.7C54.5 18.2 55 18.7 55.5 18.7Z" fill="black"/>
+                    <path d="M55.5 25.8C56.1 25.8 56.5 25.4 56.5 24.8V21.8C56.5 21.2 56.1 20.8 55.5 20.8C54.9 20.8 54.5 21.2 54.5 21.8V24.8C54.5 25.4 55 25.8 55.5 25.8Z" fill="black"/>
+                    <path d="M55.5 33C56.1 33 56.5 32.6 56.5 32V29C56.5 28.4 56.1 28 55.5 28C54.9 28 54.5 28.4 54.5 29V32C54.5 32.5 55 33 55.5 33Z" fill="black"/>
+                    <path d="M55.4 55.8999H18C17.9 55.8999 17.8 55.8999 17.7 55.9999L9.3 59.2999C8.9 59.4999 8.7 59.7999 8.7 60.1999C8.7 60.5999 9 60.9999 9.3 61.0999L17.7 64.3999C17.8 64.3999 17.9 64.4999 18.1 64.4999H55.6C56.2 64.4999 56.6 64.0999 56.6 63.4999V56.8999C56.4 56.2999 56 55.8999 55.4 55.8999ZM19 57.8999H43.1V62.4999H19V57.8999ZM45.1 57.8999H47.2V62.4999H45.1V57.8999ZM17 61.9999L12.3 60.1999L17 58.3999V61.9999ZM54.4 62.4999H49.1V57.8999H54.4V62.4999Z" fill="black"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0">
+                      <rect width="65" height="81.25" fill="white"/>
+
+
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <div class="design__roles__description">
+                <h5>Deliverables</h5>
+                <ul class="center">
+                  <li><p>User Surveys</p></li>
+                  <li><p>Competitive Analysis</p></li>
+                  <li><p>User Stories</p></li>
+                  <li><p>User Personas</p></li>
+                  <li><p>User Flows</p></li>
+                  <li><p>Site Mapping</p></li>
+                  <li><p>Sketches</p></li>
+                  <li><p>Wireframes</p></li>
+                  <li><p>Mind Mapping</p></li>
+                  <li><p>Preference Testing</p></li>
+                  <li><p>User Testing</p></li>
+                  <li><p>Prototype</p></li>
+                  <li><p>Visual Design</p></li>
+                </ul>
+              </div>
+            </div>
+          <!-- tools & softwares -->
+          <div class="design__roles">
+            <div class="design__roles__icon">
+              <svg width="30px" height="40px" viewBox="0 0 54 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 0V9H4V37H0V41.707L2.29297 44H51.707L54 41.707V37H50V9H44V0H10ZM11 1H43V2H42V3H43V4H11V1ZM12 2V3H15V2H12ZM38 2V3H39V2H38ZM40 2V3H41V2H40ZM11 5H43V31H11V5ZM12 6V7H15V6H12ZM36 6V15H42V6H36ZM37 7H41V14H37V7ZM12 8V9H13V8H12ZM14 8V9H15V8H14ZM38 8V9H40V8H38ZM25.5 8.95703L18 13.2871V21.6992L25.5 26.0273L33 21.6992V13.2871L25.5 8.95703ZM5 10H10V12H7V35H47V12H44V10H49V37H32H22H5V10ZM12 10V11H13V10H12ZM14 10V11H15V10H14ZM25.5 10.1113L31.4277 13.5352L25.5 16.957L19.5723 13.5352L25.5 10.1113ZM12 12V13H13V12H12ZM14 12V13H15V12H14ZM8 13H10V32H44V13H46V34H8V13ZM12 14V15H13V14H12ZM14 14V15H15V14H14ZM19 14.3594L25 17.8242V24.5859L19 21.1211V14.3594ZM32 14.3594V21.1191L26 24.5859V17.8223L32 14.3594ZM12 16V17H13V16H12ZM14 16V17H15V16H14ZM36 16V17H42V16H36ZM36 18V19H42V18H36ZM36 20V21H42V20H36ZM1 38H4H22V40H32V38H50H53V41.293L51.293 43H2.70703L1 41.293V38ZM23 38H31V39H23V38Z" fill="black"/>
+              </svg>
+            </div>
+            <div class="design__roles__description">
+              <h5>Tools & Softwares</h5>
+              <ul class="center">
+                <li><p>Google Forms</p></li>
+                <li><p>Whimsical</p></li>
+                <li><p>Adobe XD</p></li>
+                <li><p>Figma</p></li>
+                <li><p>Usability Hub</p></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+</div>
+
+
+<!--picture border-->
+  <div class="collaboreate__mockup">
+    <img src="images/collaboreate-mockups.jpeg" class="hidden-xs">
+  </div>
+
+<!--challenge/solution -->
+  <div class="challenge container">
+    <section class="challenges-solutions">
+      <div class="shell">
+        <div class ="challenge__solutions__content">
+          <div class="challenge__main">
+            <h3>CHALLENGE</h3>
+            <p>With the rise of festivals and digital music blogs, the desire of users to consume music experientially (through concerts) and thoroughly by doing deep dives into the music users listen to has increased significantly. That being said, the prevalence of music streaming services has isolated the way in which users experience music.</p>
+          </div>
+          <div class="solution__main">
+            <h3>SOLUTION</h3>
+            <p>Discovr disrupts this music streaming service space by adding an Events tracker that allows users to see new music events near them, and an About Me page to allow users to do deep dives into the artists and genres that interests them.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+<!--user surveys -->
+  <div class="surveys container">
+    <section class="user-surveys">
+      <div class="shell">
+        <div class="user__surveys">
+          <div class="user__surveys__content">
+            <h5>user surveys</h5>
+            <h3>UNDERSTANDING THE NEEDS OF THE USER</h3>
+            <p>After conducting user surveys, I was able to identify a few needs:<br>
+              20% of users communicated that they need to identify files easily in a cloud.<br>
+              48% of users reported wanting a more organized storage space for their files.<br>
+              36% of users added “real-time collaboration” on their wishlist.<br>
+              Alternatively, I was also able to determine a few painpoints. The major standouts were concerns about privacy and inadequate storage space.</p>
+          </div>
+          <div class="user__surveys__img">
+            <img src="images/user-surveys.png" class="expand">
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+<!--competitive analysis -->
+  <div class="analysis container">
+    <section class="competitive-analysis">
+      <div class="shell">
+        <div class="competitive__analysis">
+          <div class="competitive__analysis__content">
+            <h5>competitive analysis</h5>
+            <h3>SEEING WHAT ELSE IS OUT THERE</h3>
+            <p>I conducted a competitive analysis between four different companies: Spotify, Apple Music, Resident Advisor, and Shazam. I then created a visual that focused solely on the strengths and weaknesses in features alone to help understand how these brands were answering these big problems.</p>
+          </div>
+          <div class="competitive__analysis__img">
+            <img src="images/discovr-analysis.jpg" class="expand-1">
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+<!--user personas-->
+  <div class="personas container">
+    <section class="user-personas">
+      <div class ="shell">
+        <div class="user__personas">
+          <div class="user__personas__content">
+            <h5>user personas</h5>
+            <h3>CAPTURING THE NATURE AND MOTIVATIONS OF THE USER</h3>
+            <p>I created personas to target two main categories of users for Discovr.</p>
+          </div>
+          <div class="user__personas__img">
+            <img src="images/discovr-persona.jpg" class="expand">
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+<!--user STORIES-->
+  <div class="flows container">
+    <section class="user-flows">
+      <div class="shell">
+        <div class="user__flows">
+          <div class="user__flows__content">
+            <h5>user stories</h5>
+            <h3>PRIORITIZING BEHAVIORS</h3>
+            <p>I then took on the task of creating user stories to dictate a clear priority of what users need in order to use a minimum viable product. This assessed what users would absolutely need in order to use a music discovery app, what they would like to have, and nice-to-have's.</p>
+          </div>
+          <div class="user__flows__img">
+            <img src="images/user-flows.png" class="expand-1">
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!--user personas-->
+    <div class="personas container">
+      <section class="user-personas">
+        <div class ="shell">
+          <div class="user__personas">
+            <div class="user__personas__content">
+              <h5>user flows</h5>
+              <h3>IRONING OUT THE DETAILS</h3>
+              <p>I created a content strategy, site map, and drew out user flows to truly understand what the visual interface would look like. I started with a pen and paper, and then moved onto digital versions to assess if these flows were efficien and user-friendly, or confusing.</p>
+            </div>
+            <div class="user__personas__img">
+              <img src="images/discovr-userflows.png" class="expand">
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+<!--wireframes-->
+  <div class="wframes container">
+    <section class="wireframes__section">
+      <div class="shell">
+        <div class="wireframes">
+          <div class="wireframes__content">
+            <h5>wireframes</h5>
+            <h3>LAYING THE FOUNDATION</h3>
+            <p>After sketching these wireframes out with pen and paper, and I made digital wireframes with Adobe XD to get a clickable prototype for usability testing. I completed several versions of these digital wireframes to iterate more quickly in the future when moving to mockups.</p>
+          </div>
+          <div class="wireframes__img">
+            <div class="wireframes__flex">
+              <div class="wireframe__1">
+                <img src="images/discovr-wireframe-1.png" class="expand-2">
+              </div>
+              <div class="wireframe__2">
+                <img src="images/discovr-wireframe-2.png" class="expand-2">
+              </div>
+              <div class="wireframe__2">
+                <img src="images/discovr-wireframe-3.png" class="expand-2">
+              </div>
+              <div class="wireframe__3">
+                <img src="images/discovr-wireframe-4.png" class="expand-2">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+<!--mockups-->
+  <div class="mockups container">
+    <section class="high-fidelity-mockups">
+      <div class="shell">
+        <div class="high__fidelity__mockups">
+          <div class="high__fidelity__mockups__content">
+            <h5>high fidelity mockups</h5>
+            <h3>TAKING IN ALL THE DETAILS</h3>
+            <p>After a successful few rounds of usability testing for my wireframes and a completed brand strategy, I moved into creating polished mockups for the app. I moved through several iterations of these mockups as well before finalizing and prototyping the final deliverable with Figma's prototyping tool.</p>
+          </div>
+          <div class="high__fidelity__mockups__flex">
+            <div class="mockups__1">
+              <img src="images/discovr-mockups-1.jpg" class="expand-2">
+            </div>
+            <div class="mockups__2">
+              <img src="images/discovr-mockups-2.jpg" class="expand-2">
+            </div>
+            <div class="mockups__2">
+              <img src="images/discovr-mockups-3.jpg" class="expand-2">
+            </div>
+            <div class="mockups__3">
+              <img src="images/discovr-mockups-4.jpg" class="expand-2">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+<!--usability testing-->
+  <div class="testing container">
+    <section class="usability-testing">
+      <div class="shell">
+        <div class="usability__testing__content">
+          <h5>usability testing</h5>
+          <h3>USER FEEDBACK AND TAKEAWAYS</h3>
+          <p>The final round of usability tests were invaluable. I walked out of these tests with critical feedback and updated the design to decrease confusion with some of the flows.</p>
+          <a href ="https://www.figma.com/proto/KFCclvd7D6eRlnf9jIzWHZcG/Music-Discovery-App?node-id=48%3A80&scaling=scale-down" class ="button">View Prototype</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+
+  <div class="more__project container">
+      <div class="shell">
+        <div class="more__project__section">
+          <h1 id="contact__header">See next project</h1>
+        </div>
+      </div>
+  </div>
+  <!-- Footer -->
+      <footer id="footer" class="container">
+        <div class="shell">
+          <div class="footer__2">
+          <div class="copyright__2"><h6>© Bridget Zhong 2019. All rights reserved.</h6></div>
+          <div class ="social__media__links__2">
+            <ul id="social__2">
+              <li>
+                <a href="http://www.twitter.com/brdgt_says">
+                  <div id="twitter" class="row">
+                    <img src="images/twitter.png" class="twitter__icon">
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="http://www.instagram.com/brdgt.png">
+                  <div id="instagram" class="row">
+                    <img src="images/instagram.png" class ="instagram__icon">
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="http://www.github.com/bridgetzhong">
+                  <div id="github" class="row">
+                    <img src="images/github.png" class="github__icon">
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="http://www.linkedin.com/in/bridget-zhong">
+                  <div id="linkedin" class="row">
+                    <img src="images/linkedin.png" class="linkedin__icon"/>
+                  </div>
+                </a>
+              </li>
+            </ul>
+        </div>
+        </div>
+      </div>
+      </footer>
+
+
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134286851-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-134286851-1');
+      </script>
+
+      <!--JQUERY -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+      <script src="js/pace.js"></script>
+      <script src="js/script.js"></script>
+
+    </body>
+</html>
